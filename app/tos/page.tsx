@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getSEOTags } from "@/libs/seo";
 import config from "@/config";
+import { getSEOTags } from "@/libs/seo";
 
 // CHATGPT PROMPT TO GENERATE YOUR TERMS & SERVICES — replace with your own data 👇
 
@@ -35,12 +35,7 @@ const TOS = () => {
     <main className="max-w-xl mx-auto">
       <div className="p-5">
         <Link href="/" className="btn btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="w-5 h-5"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
             <path
               fillRule="evenodd"
               d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
@@ -49,47 +44,49 @@ const TOS = () => {
           </svg>
           Back
         </Link>
-        <h1 className="text-3xl font-extrabold pb-6">
-          Terms and Conditions for {config.appName}
-        </h1>
+        <h1 className="text-3xl font-extrabold pb-6">Terms and Conditions for {config.appName}</h1>
 
-        <pre
-          className="leading-relaxed whitespace-pre-wrap"
-          style={{ fontFamily: "sans-serif" }}
-        >
-          {`Last Updated: September 26, 2023
+        <pre className="leading-relaxed whitespace-pre-wrap" style={{ fontFamily: "sans-serif" }}>
+          {`Terms & Services
+Effective Date: January 13, 2025
 
-Welcome to ShipFast!
+Welcome to KoffeeKonnekt!
 
-These Terms of Service ("Terms") govern your use of the ShipFast website at https://shipfa.st ("Website") and the services provided by ShipFast. By using our Website and services, you agree to these Terms.
+These Terms & Services govern your use of our website, software, and services. By accessing or using KoffeeKonnekt, you agree to these Terms. If you do not agree, please discontinue use of our services.
 
-1. Description of ShipFast
+1. Services Provided
+KoffeeKonnekt offers software for arranging coffee meetings for remote teams. Users are granted monthly access to a dashboard where they can add and manage team members.
 
-ShipFast is a platform that offers a JavaScript code boilerplate to assist entrepreneurs in launching their startups more efficiently.
+2. User Responsibilities
+Users must provide accurate and up-to-date information, including name, email, and payment details.
+Users are responsible for maintaining the confidentiality of their login credentials.
 
-2. Ownership and Usage Rights
+3. Data Collection
+We collect personal data (name, email, and payment information) as outlined in our Privacy Policy.
+We also use cookies to enhance the user experience.
 
-When you purchase a package from ShipFast, you gain the right to download and use the code provided for creating applications. You own the code you create but do not have the right to resell it. We offer a full refund within 7 days of purchase, as specified in our refund policy.
+4. Payment and Subscriptions
+Access to the dashboard is provided on a subscription basis.
+All fees are billed monthly and are non-refundable except as required by law.
 
-3. User Data and Privacy
+5. Ownership and Intellectual Property
+All content, software, and materials provided by KoffeeKonnekt are the intellectual property of KoffeeKonnekt. Users are granted a limited, non-transferable license to use the software solely for its intended purpose.
 
-We collect and store user data, including name, email, and payment information, as necessary to provide our services. For details on how we handle your data, please refer to our Privacy Policy at https://shipfa.st/privacy-policy.
+6. Modifications to Terms
+KoffeeKonnekt reserves the right to update these Terms. Users will be notified of changes via email. Continued use of the services after updates signifies acceptance of the new Terms.
 
-4. Non-Personal Data Collection
+7. Termination
+KoffeeKonnekt reserves the right to terminate or suspend access to services for any breach of these Terms.
 
-We use web cookies to collect non-personal data for the purpose of improving our services and user experience.
+8. Governing Law
+These Terms are governed by the laws of the United States.
 
-5. Governing Law
+9. Contact Information
+For any questions or concerns, please contact us at dugg@devdugg.com.
 
-These Terms are governed by the laws of France.
+By using KoffeeKonnekt, you acknowledge and agree to these Terms & Services.
 
-6. Updates to the Terms
-
-We may update these Terms from time to time. Users will be notified of any changes via email.
-
-For any questions or concerns regarding these Terms of Service, please contact us at marc@shipfa.st.
-
-Thank you for using ShipFast!`}
+Thank you for choosing KoffeeKonnekt!`}
         </pre>
       </div>
     </main>
